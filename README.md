@@ -17,4 +17,9 @@ The program gen_X.py generates the (or those) X matrices of size 2^n times 2^n f
 
 These codes are for a mathematical (lattice-theoretical) project. For more details, see our future paper (announced here when it gets available ;))
 
-Notice: I could only make it run for n = 1,2 (lack of resources? Working on it...)
+Notice: gen_X.py runs only for n = 1,2 because the number of matrices is too much.
+To go a bit further and reduce the number of potential X candidates, I made some assumptions:
+1) In X, the only non-zero elements are in the bottom left corner
+2) In this bottom left corner, the sub-matrix is upper-diagonal.
+
+This new code is contained in gen_X_reduced.py.
